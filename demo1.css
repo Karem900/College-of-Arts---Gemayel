@@ -1,0 +1,579 @@
+/* Navbar */
+.navbar {
+    background-color: rgb(23, 70, 222);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+    
+    
+}
+
+.navbar img {
+    width: 100px;
+}
+
+/* Navigation Links */
+.list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.list li {
+    list-style: none;
+
+}
+
+.list li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: 0.4s;
+    border-radius: 20px;
+    font-size: 28px;
+    color: rgb(250, 246, 246);
+    
+}
+
+.list li a:hover {
+    background-color: rgb(18, 229, 248);
+}
+
+section{
+    top: 20px
+}
+
+.home img{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+    
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .list li a {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 5px;
+    }
+
+}
+
+
+/* نمودج التسجيل */
+
+.header .container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(20, 213, 239);
+    overflow: hidden;
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.left-side, .right-side {
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+.left-side {
+    background-color: #007BFF;
+    color: white;
+}
+
+.left-side h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.header .signin-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-side h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: right; /* Align right on larger screens */
+    color: #000;
+}
+
+.header .right-side form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    color: #000;
+}
+
+.header .signup-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.header .social-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-signup p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 20px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+
+    .form-container {
+        flex-direction: column; /* Stack text and form vertically */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Full width for each section */
+        padding: 30px; /* Reduce padding */
+    }
+
+    .right-side h2 {
+        text-align: right; /* right align for smaller screens */
+    }
+
+    .signin-button, .signup-button {
+        width: 100%; /* Full width for buttons */
+    }
+}
+
+
+
+/* نهاية نمودج  */
+
+.blog-section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.blog-section h1 {
+    font-size: 40px;
+    color: #333;
+    padding:35px;
+    
+    
+}
+
+.blog-section .highlight {
+    color: #182fe2;
+    font-size: 50px;
+    margin: 5px;
+}
+
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(49, 186, 254, 0.821);
+    max-width: 400px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.blog-card h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.blog-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.blog-card a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.card-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap; /* السماح بتكرار العناصر في صفوف متعددة */
+    justify-content: space-around;
+    width: 80%;
+    margin: auto; /* لتوسيط الحاوية */
+    padding: 20px 0; /* تباعد عمودي */
+   
+}
+
+.section .card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(7, 142, 252, 0.579);
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* العرض الكامل في الشاشات الصغيرة */
+    max-width: 300px; /* أقصى عرض للبطاقة */
+    transition: all 0.3s ease;
+    margin: 10px; /* تباعد بين البطاقات */
+}
+.card-container h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.card .icon {
+    margin-bottom: 20px;
+}
+
+.card .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.card h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education {
+    background-color: #ffff03;
+}
+
+.credentialing {
+    background-color: #74787b;
+}
+
+.wallet {
+    background-color: #e1bee7;
+}
+
+.human-resources {
+    background-color: #7dc5ff;
+}
+
+/* استعلامات الوسائط لتصميم استجابة */
+
+@media (max-width: 1200px) {
+    .card-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي في الشاشات الأصغر */
+        align-items: center;
+        
+    }
+
+   .section .card {
+        width: 90%;
+        max-width: 500px; /* عرض أكبر قليلاً في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    .section .card {
+        max-width: 100%; /* عرض كامل للبطاقة في الشاشات الصغيرة جداً */
+        padding: 15px; /* تقليل التباعد الداخلي */
+    }
+
+    .card h3 {
+        font-size: 16px; /* تقليل حجم الخط في الشاشات الصغيرة */
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* لجعل النص من اليمين لليسار */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social,
+.footer-college {
+    flex: 1;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin: 10px 0;
+   
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    
+    
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.footer-college p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.footer-social ul li a img:hover{
+    width:40px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #5b5858;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  
+}
+
+.info-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    
+}
+
+.programs-section {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(41, 129, 252, 0.759);
+   
+    
+}
+
+.programs-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.program-card {
+    background-color: #e4e7eb;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
+   
+
+    
+}
+.program-card p{
+font-size: 54px;
+}
+.program-card h3{
+    font-size: 24px;
+    }
+
+.program-card:hover {
+    background-color: #1143ea;
+    transition: all 1.3s ease;
+   
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1143ea;
+    color: white;
+    border-radius: 8px;
+    margin-top: 40px;
+    transition: all 1.3s ease;
+}
+
