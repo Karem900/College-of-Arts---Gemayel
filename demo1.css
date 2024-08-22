@@ -112,10 +112,7 @@ section{
         padding: 8px 16px;
         margin: 5px;
     }
-    .spinner{
-        margin-left:30%;
-        margin-top:30%;
-    }
+
 }
 
 
@@ -414,6 +411,10 @@ section{
     .section .card {
         max-width: 100%; /* عرض كامل للبطاقة في الشاشات الصغيرة جداً */
         padding: 15px; /* تقليل التباعد الداخلي */
+    }
+    .spinner{
+        margin-left:30%;
+        margin-top:30%;
     }
 
     .card h3 {
