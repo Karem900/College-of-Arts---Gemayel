@@ -160,15 +160,46 @@ section{
     margin-bottom: 40px;
 }
 
-.header .signin-button {
-    background-color: transparent;
+/* From Uiverse.io by CristianMontoya98 */ 
+.btn {
+    width: 9.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: rgb(0, 0, 0);
     color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 1.625em;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
-}
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: rgb(0, 0, 0);
+   }
+   
+   button:after {
+    content: "";
+    background: rgb(57, 143, 236);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
 
 .right-side h2 {
     font-size: 24px;
@@ -184,18 +215,6 @@ section{
     border-radius: 5px;
     border: 1px solid #000000;
     color: #000;
-}
-
-.header .signup-button {
-    width: 100%;
-    padding: 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
 }
 
 .header .social-signup {
