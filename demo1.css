@@ -644,3 +644,65 @@ font-size: 54px;
         margin-top:50%;
     }
 }
+
+.goals{
+    box-shadow:1px 1px 10px  #057dfe;
+    width:70%;
+    padding:20px 50px;
+    margin:70px;
+    transition:1s;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.goals-b{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:70%;
+    box-shadow:1px 1px 10px  #057dfe;
+    padding:20px 50px;
+    margin:70px;
+    transition:1s;
+    text-align: right;
+}
+.goals-c{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow:1px 1px 10px  #057dfe;
+    padding:20px 50px;
+    width:70%;
+    margin:70px;
+    transition:1s;
+    text-align: right;
+}
+.goals:hover{
+ transform: translateY(-15px);
+}
+.goals-b:hover{
+    transform: translateY(-15px);
+   }
+.goals-c:hover{
+    transform: translateY(-15px);
+   }
+   video{
+    width:90%;
+    height:60vh;
+    margin:40px 80px;
+    box-shadow:1px 1px 10px  #057dfe;
+    
+    
+   }
+
+
+@media screen and (max-width:769px) {
+    .goals{
+        padding:10px;
+    }
+    .goals-b{
+        padding:10px;
+    }
+    .goals-c{
+        padding:10px;
+    }
+    video{
+        margin:40px 20px;
+    }
+}
