@@ -649,7 +649,7 @@ font-size: 54px;
     box-shadow:1px 1px 10px  #057dfe;
     width:70%;
     padding:20px 50px;
-    margin:70px;
+    margin:20px 230px;
     transition:1s;
     text-align: right;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -660,7 +660,7 @@ font-size: 54px;
     width:70%;
     box-shadow:1px 1px 10px  #057dfe;
     padding:20px 50px;
-    margin:70px;
+    margin:20px 230px;
     transition:1s;
     text-align: right;
 }
@@ -669,40 +669,71 @@ font-size: 54px;
     box-shadow:1px 1px 10px  #057dfe;
     padding:20px 50px;
     width:70%;
-    margin:70px;
+    margin:20px 230px;
     transition:1s;
     text-align: right;
 }
 .goals:hover{
- transform: translateY(-15px);
+ transform:translateZ(100deg);
+ background-color: #007BFF;
+ color:white;
 }
 .goals-b:hover{
-    transform: translateY(-15px);
+    transform:translateZ(100deg);
+    background-color: #007BFF;
+    color:white;
    }
 .goals-c:hover{
-    transform: translateY(-15px);
+    transform:translateZ(100deg);
+    background-color: #007BFF;
+    color:white;
    }
-   video{
-    width:90%;
-    height:60vh;
-    margin:40px 80px;
-    box-shadow:1px 1px 10px  #057dfe;
-    
-    
-   }
+
+
+
+  video{
+    width:70%;
+   margin:20px 230px;
+   border-radius:20px;
+   box-shadow:1px 2px 15px #007BFF;
+   
+  }
+
 
 
 @media screen and (max-width:769px) {
     .goals{
+        margin:30px 65px;
         padding:10px;
+         }
+    .goals .h{
+        text-align: center;
     }
     .goals-b{
         padding:10px;
+        margin:30px 65px;
+    }
+    .goals-b h1{
+        font-size:35px;
+    }
+    .goals-b .h{
+        text-align: center;
+        font-size:40px;
     }
     .goals-c{
         padding:10px;
+        margin:30px 65px;
+    }
+    .goals-c .h{
+        text-align: center;
     }
     video{
-        margin:40px 20px;
+        width:80%;
+        margin:20px 35px;
     }
 }
+
+
+
+
+
